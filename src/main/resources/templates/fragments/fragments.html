@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head th:fragment="head">
+	<meta charset="UTF-8">
+	<title>UIR TITLE</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
+	<script th:src="@{js/jquery-3.5.1.slim.min.js}"></script>
+	<script th:src="@{js/bootstrap.min.js}"></script>
+</head>
+<title>For fragments Only</title>
+</head>
+<body>
+	<div class="col-md-12 alert alert-primary" th:fragment="header">
+      This is a header
+    </div>
+    
+	<div class="col-md-12 alert alert-danger" th:fragment="footer">
+      &copy; 2020 Footer
+    </div>
+
+</body>
+</html>
